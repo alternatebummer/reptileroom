@@ -1,0 +1,193 @@
+/* ==========================
+   Reset
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================
+   Page
+========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #ffffff;
+    color: #222;
+    padding: 30px 14px;
+    line-height: 1.6;
+}
+
+/* ==========================
+   Layout
+========================== */
+
+.container {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    max-width: 1200px;
+}
+
+.left-column {
+    width: 310px;
+    flex-shrink: 0;
+}
+
+.right-column {
+    flex: 1;
+}
+
+/* ==========================
+   Headings
+========================== */
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+h1 a {
+    color: #b73a34;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+
+.section-title {
+    margin-top: 26px;
+    margin-bottom: 4px;
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.section-subheading {
+    margin-top: 26px;
+    margin-bottom: 4px;
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: #777;
+    text-transform: uppercase;
+}
+
+/* ==========================
+   Navigation
+========================== */
+
+nav p {
+    margin-bottom: 12px;
+}
+
+a {
+    color: #b73a34;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================
+   Image
+========================== */
+
+img {
+    width: 100%;
+    display: block;
+    margin-bottom: 14px;
+}
+
+/* ==========================
+   Rules
+========================== */
+
+hr {
+    border: 0;
+    border-top: 1px solid #e3e3e3;
+    margin: 22px 0;
+}
+
+/* ==========================
+   Projectionist
+========================== */
+
+.intro {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 36px;
+}
+
+.review {
+    margin-bottom: 40px;
+}
+
+.review h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.review h3 span {
+    color: #777;
+    font-weight: normal;
+    font-size: 0.85em;
+}
+
+.meta {
+    color: #777;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.meta strong {
+    color: inherit;
+    font-weight: bold;
+}
+
+.review p:not(.meta) {
+    color: #222;
+    max-width: 72ch;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.review em {
+    font-style: italic;
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width: 800px) {
+
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left-column {
+        width: 100%;
+    }
+
+    img {
+        max-width: 350px;
+    }
+
+    .review p {
+        max-width: 100%;
+    }
+}
