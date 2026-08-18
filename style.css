@@ -31,6 +31,7 @@ body {
 .container {
     display: flex;
     gap: 48px;
+    line-height: 22px;
     align-items: flex-start;
     max-width: 1200px;
 }
@@ -68,6 +69,7 @@ h2 {
     margin-bottom: 4px;
     font-size: 1.15rem;
     font-weight: normal;
+    line-height: 10px;
     color: #777;
     text-transform: uppercase;
 }
@@ -146,18 +148,13 @@ hr {
 }
 
 .meta {
-    color: #777;
+    color: #222;
     font-size: 0.95rem;
-    line-height: 1.7;
+    line-height: 22px;
     margin-bottom: 18px;
 }
 
-.meta strong {
-    color: inherit;
-    font-weight: bold;
-}
-
-.review p:not(.meta) {
+.review p {
     color: #222;
     max-width: 72ch;
     margin-bottom: 1rem;
